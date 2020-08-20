@@ -1,0 +1,90 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window id="window_Curso" title="Cadastrar Curso" border="normal" closable="true" width="900px" apply="br.controle.CursoControle">
+
+	<tabbox>
+		<tabs>
+			<tab id="tabCod" label="Manter Cadastro"/>
+			<tab id="tabPesq" label="Pesquisar"/>
+			<tab id="tabAlt" label="Alterar"/>
+		</tabs>
+		<tabpanels>
+			<tabpanel>
+				<grid>
+					<columns>
+						<column label=""/>
+						<column label=""/>
+					</columns>
+					<rows>
+						<row>
+							<label value="Nome"/>
+							<textbox id="txtNome" cols="20"/>
+						</row>
+					</rows>
+				</grid>
+				<groupbox>
+					<div align="center">
+						<button id="btnIncluir" label="Incluir"/>
+						<button id="btnLimpar" label="Limpar"/>
+					</div>
+				</groupbox>
+			</tabpanel>
+			<tabpanel>
+				<grid>
+					<columns>
+						<column label=""/>
+						<column label=""/>
+					</columns>
+					<rows>
+						<row>
+							<label value="Pesquisa"/>
+							<textbox id="txtPesquisa" cols="20"/>
+						</row>
+					</rows>
+				</grid>
+				<groupbox>
+					<listbox id="lsbPesquisa" rows="6">
+						<listhead>
+							<listheader label="id" sort="auto" width="30%"/>
+							<listheader label="Nome" sort="auto" width="70%"/>
+						</listhead>
+					</listbox>				
+				</groupbox>	
+				<groupbox>
+					<div align="center">
+						<button id="btnLimparLista" label="Limpar"/>
+						<button id="btnAtualizarLista" label="Atualizar"/>
+					</div>
+				</groupbox>
+			</tabpanel>
+			<tabpanel>
+				<grid>
+					<columns>
+						<column label=""/>
+						<column label=""/>
+					</columns>
+					<rows>
+						<row>
+							<label value="Id"/>
+							<intbox id="intId" cols="5"/>
+							<listbox id="listBoxInc" rows="1" mold="select"></listbox>
+						</row>
+						<row>
+							<label value="Nome"/>
+							<textbox id="txtNomeAlt" cols="20"/>
+							<label value=""/>
+						</row>
+					</rows>
+				</grid>
+				<groupbox>
+					<div align="center">
+						<button id="btnAlterar" label="Alterar"/>
+						<button id="btnExcluir" label="Excluir"/>
+						<button id="btnLimparAlt" label="Limpar"/>
+					</div>
+				</groupbox>
+			</tabpanel>
+		</tabpanels>
+	</tabbox>
+</window>
+</zk>

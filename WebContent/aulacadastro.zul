@@ -1,0 +1,110 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window id="window_Aula" title="Cadastrar Aula" border="normal" closable="true" width="900px" apply="br.controle.AulaControle">
+
+	<tabbox>
+		<tabs>
+			<tab id="tabCod" label="Manter Cadastro"/>
+			<tab id="tabPesq" label="Pesquisar"/>
+			<tab id="tabAlt" label="Alterar"/>
+		</tabs>
+		<tabpanels>
+			<tabpanel>
+				<grid>
+					<columns>
+						<column label=""/>
+						<column label=""/>
+					</columns>
+					<rows>
+						<row>
+							<label value="Titulo"/>
+							<textbox id="txtTitulo" cols="20"/>
+						</row>
+						<row>
+							<label value="Descricao"/>
+							<textbox id="txtDescricao" cols="20"/>
+						</row>
+						<row>
+							<label value="Curso"/>
+							<textbox id="txtCurso" cols="20" readonly="true"/>
+						</row>
+						<row>
+							<intbox id="intIdCurso" cols="5" readonly="true"/>
+							<listbox id="listBoxCurso" rows="1" mold="select"></listbox>
+						</row>
+					</rows>
+				</grid>
+				<groupbox>
+					<div align="center">
+						<button id="btnIncluir" label="Incluir"/>
+						<button id="btnLimpar" label="Limpar"/>
+					</div>
+				</groupbox>
+			</tabpanel>
+			<tabpanel>
+				<grid>
+					<columns>
+						<column label=""/>
+						<column label=""/>
+					</columns>
+					<rows>
+						<row>
+							<label value="Pesquisa"/>
+							<textbox id="txtPesquisa" cols="20"/>
+						</row>
+					</rows>
+				</grid>
+				<groupbox>
+					<listbox id="lsbPesquisa" rows="6">
+						<listhead>
+							<listheader label="id" sort="auto" width="15%"/>
+							<listheader label="Titulo" sort="auto" width="40%"/>
+							<listheader label="Descricao" sort="auto" width="45%"/>
+						</listhead>
+					</listbox>				
+				</groupbox>	
+				<groupbox>
+					<div align="center">
+						<button id="btnLimparLista" label="Limpar"/>
+						<button id="btnAtualizarLista" label="Atualizar"/>
+					</div>
+				</groupbox>
+			</tabpanel>
+			<tabpanel>
+				<grid>
+					<columns>
+						<column label=""/>
+						<column label=""/>
+					</columns>
+					<rows>
+						<row>
+							<label value="Id"/>
+							<intbox id="intId" cols="5"/>
+							<listbox id="listBoxInc" rows="1" mold="select"></listbox>
+						</row>
+						<row>
+							<label value="Titulo"/>
+							<textbox id="txtTituloAlt" cols="20"/>
+						</row>
+						<row>
+							<label value="Descricao"/>
+							<textbox id="txtDescricaoAlt" cols="20" />
+						</row>
+						<row>
+							<label value="Curso"/>
+							<textbox id="txtCursoAlt" cols="20" readonly="true"/>
+						</row>
+					</rows>
+				</grid>
+				<groupbox>
+					<div align="center">
+						<button id="btnAlterar" label="Alterar"/>
+						<button id="btnExcluir" label="Excluir"/>
+						<button id="btnLimparAlt" label="Limpar"/>
+					</div>
+				</groupbox>
+			</tabpanel>
+		</tabpanels>
+	</tabbox>
+</window>
+</zk>

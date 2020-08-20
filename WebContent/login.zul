@@ -1,0 +1,31 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<div align="center">
+		<window title="Login" border="normal" width="50%" apply="br.controle.LoginControle">
+			<div align="center">
+				<grid width="60%">
+					<rows>
+						<row>
+							<div align="right" width="30%">
+								<label value="Nome"/>
+							</div>
+							<textbox id="nome" cols="20"/>
+						</row>
+						<row>
+							<div align="right" width="30%">
+								<label value="Senha"/>
+							</div>
+							<textbox id="password" type="password" cols="10"/>
+						</row>
+						<row>
+							<label value="" width="30%"/>
+							<div align="center">
+								<button id="logar" label="Logar" />
+							</div>
+						</row>
+					</rows>
+				</grid>
+			</div>
+		</window>
+	</div>
+</zk>

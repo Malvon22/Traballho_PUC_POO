@@ -1,0 +1,22 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<div align="center">
+		<window title="Menu" border="normal" id="wMenu" width="90%" height="550px" apply="br.controle.MenuControle">
+			<label value="Administrador:"/>
+			<div align="left">
+				<menubar id="menubar" left="0px">
+					<menu id="menuPrincipal" label="Cadastros">
+						<menupopup>
+							<menuitem id="menuItemAlunos" label="Alunos"
+							  tooltiptext="Cadastro de alunos"/>
+							<menuitem id="menuItemCursos" label="Cursos"
+							  tooltiptext="Cadastro de cursos"/>
+						    <menuitem id="menuItemAulas" label="Aulas"
+						      tooltiptext="Cadastro de aulas"/>
+						</menupopup>
+					</menu>
+				</menubar>
+			</div>
+		</window>
+	</div>
+</zk>

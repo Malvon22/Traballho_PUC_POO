@@ -1,0 +1,25 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<div align="center">
+		<window title="Assistir Aula" border="normal" id="window_assitir" width="90%" height="550px" apply="br.controle.AssistirAulaControle">
+			<label value=""/>
+			<div align="center">
+				<grid width="50%">
+					<rows>
+						<row>
+							<label value="Selecione o Curso" width="30%"/>
+							<listbox id="listBoxCurso" rows="1" mold="select"></listbox>
+						</row>
+						<row id="aulaSelec" visible="false">
+							<label value="Selecione a Aula" width="30%"/>
+							<listbox id="listBoxAula" rows="1" mold="select"></listbox>
+						</row>
+					</rows>
+				</grid>
+				<div visible="false" id="imagem" align="center" width="60%">
+					<image src="/teste2.jpg"/>
+				</div>
+			</div>
+		</window>
+	</div>
+</zk>
